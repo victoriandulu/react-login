@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+
 import './App.css';
+import profile from "./image/person.jpg"
+import email2 from "./image/email2.jpg"
+import password from "./image/password.jpg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+     <div className='sub-main'>
+<div>
+  <div className='imgs'>
+    <div className='container-imgs'>
+      <img src={profile} alt='profile' className='profile'/>
+
+    </div>
+
+  </div>
+  <div>
+    <h1>LogIn Page</h1>
+  </div>
+  <div>
+    <img src={email2} alt='email' className='email'/>
+    <input type='text' placeholder='user name' className='name'/>
+  </div>
+  <div className='second-input'>
+    <img src={password} alt='password' className='email'/>
+    <input type='text' placeholder='password' className='name4'/>
+  </div>
+  <div className='login-button'>
+  <button>LOG IN</button>
+  </div>
+  <div>
+    <p>
+      <a href = "#"> Forgot password ?</a> OR <a href = "#"> SIGN UP</a>
+    </p>
+  </div>
+ 
+</div>
+     </div>
     </div>
   );
 }
